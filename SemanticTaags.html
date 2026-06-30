@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Semantic Tags</h1>
+    </header>
+    <nav><a href="#home">Home</a>
+    <a href="#registration">Registration</a>
+    <a href="#about">About</a><br><br>
+    </nav>
+    <main>
+        <section id="home">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/17rpWFkH2Bo?si=0m3gMY35WsXlPNip&autoplay&1" 
+    title="YouTube video player" 
+    frameborder="0"
+   
+     allow="accelerometer; 
+     autoplay; 
+     clipboard-write; 
+     encrypted-media; 
+     gyroscope; 
+     picture-in-picture;
+    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   <br><br>    
+ </section>
+ <section id="registration">
+     <form >
+        <fieldset>
+        <legend><strong>Registration Form</strong></legend><br>
+        <label for="">Name</label><br>
+        <input type="text" 
+        pattern="[A-Za-z]{3,30}]"
+        placeholder="Enter name"
+        required
+        title="name must be alphabets and can include spaces"><br><br>
+        <label for="">Age</label><br>
+        <input type="number" min="18" max="60"><br><br>
+        <label for="">Email</label><br>
+        <input type="email"
+        pattern="[a-z0-9,_%+-]+@[a-z0-9,-]+\.[a-z{2,}$]"
+        title="email should include @ "><br><br>
+        <label for="">Phone Number</label><br>
+        <input type="tel"
+        pattern="[6-9][0-9]{9}"
+        title="number must be 10 digits"><br><br>
+        <label for="">Password</label><br>
+        <input type="password"
+        pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$^&%+=!]).{8,}"
+        title="password must contain 8 digits ,upper,lower,digits"><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </fieldset>
+        </form><br>
+        <section id="about">
+            <h1>About Page</h1>
+            This is something something page
+        </section>
+        
+ </section>
+
+    </main>
+    <footer>
+        <h2>social media links </h2>
+        <a href="">instagram</a><br>
+        <a href="">facebook</a>
+        <h2>Contact form</h2>
+         <form >
+        <fieldset>
+        <label for="">Name</label><br>
+        <input type="text" 
+        pattern="[A-Za-z]{3,30}]"
+        placeholder="Enter name"
+        required
+        title="name must be alphabets and can include spaces"><br><br>
+        <label for="">Age</label><br>
+        <input type="number" min="18" max="60"><br><br>
+        <label for="">Email</label><br>
+        <input type="email"
+        pattern="[a-z0-9,_%+-]+@[a-z0-9,-]+\.[a-z{2,}$]"
+        title="email should include @ "><br><br>
+        <label for="">Phone Number</label><br>
+        <input type="tel"
+        pattern="[6-9][0-9]{9}"
+        title="number must be 10 digits"><br>
+        <label for="">Message</label><br>
+        <textarea name="" id="" rows="5" cols="40"></textarea>
+       </fieldset>
+        </form><br>
+        <p>&copy 2026 ALL RIGHTS RESERVED</p>
+        <script>
+    let a=20;
+    let b=20;
+    console.log(a+b);
+</script>
+    </footer>
+</body>
+
+</html>
