@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            width: 200px;
+            height: 100px;
+            background: slateblue;
+            color:aliceblue;
+            line-height: 100px;
+            animation: fadeIn 4s;
+            border: 2px solid orange;
+        }
+        .ball1{
+            width: 200px;
+            height: 100px;
+            background: slateblue;
+            color:aliceblue;
+            line-height: 100px;
+            animation: fadeOut 4s;
+            border: 2px solid orange;
+        }
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        } 
+        @keyframes fadeOut{
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+    <div class="ball1"></div>
+</body>
+</html>

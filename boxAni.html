@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            width:80px;
+            height:80px;
+            background:orange;
+            border-radius: 50%;
+            animation:bounce 1s infinite alternate;
+        }
+        .ball1{
+            width:80px;
+            height:80px;
+            background:brown;
+            border-radius: 50%;
+            animation:bounce1 0.8s infinite alternate;
+        }
+        .ball2{
+            width:80px;
+            height:80px;
+            background:paleturquoise;
+            border-radius: 50%;
+            animation:bounce2 1s infinite alternate;
+        }
+        .ball3{
+            width:80px;
+            height:80px;
+            background:slateblue;
+            border-radius: 50%;
+            animation:bounce3 1s infinite alternate;
+        }
+        .ball4{
+            width:80px;
+            height:80px;
+            background:goldenrod;
+            border-radius: 50%;
+            animation:bounce4 1s infinite alternate;
+        }
+        .ball5{
+            width:80px;
+            height:80px;
+            background:green;
+            border-radius: 50%;
+            animation:bounce5 1s infinite alternate;
+        }
+        
+
+        @keyframes bounce{
+            from{
+                transform:translateX(0);
+            }
+            to{
+                transform:translateX(230px);
+            }
+        } 
+        @keyframes bounce1{
+            from{
+                transform:translateX(0);
+            }
+            to{
+                transform:translateX(400px);
+            }
+        } 
+        @keyframes bounce2{
+            from{
+                transform:translate(0);
+            }
+            to{
+                transform:rotateX(230deg);
+            }
+        } 
+        @keyframes bounce3{
+            from{
+                transform:translate3d(0deg);
+            }
+            to{
+                transform:translate3d(600px,300px,500px);
+            }
+        } 
+        @keyframes bounce4{
+            from{
+                transform:scale(3);
+            }
+            to{
+                transform:scale(8);
+            }
+        } 
+        @keyframes bounce5{
+            from{
+                transform:rotate3d(0deg);
+            }
+            to{
+                transform:rotate3d(600,300,500,270deg);
+            }
+        } 
+    </style>
+
+</head>
+<body>
+    <div class="ball"></div>
+    <div class="ball1"></div>
+    <div class="ball2"></div>
+    <div class="ball3"></div>
+    <div class="ball4"></div>
+    <div class="ball5"></div>
+</body>
+</html>
