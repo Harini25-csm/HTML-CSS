@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+}
+header{
+    background:navy;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.container{
+    display:flex;
+}
+.box{
+    flex:1;
+    padding:40px;
+    text-align:center;
+    color:white;
+}
+.box1{
+    background:red;
+}
+.box2{
+    background:green;
+}
+.box3{
+    background:blue;
+}
+/* Mobile Screen */
+@media(max-width:768px){
+.container{
+    flex-direction:column;
+}
+header{
+    background:orange;
+}
+.box{
+    font-size:25px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Responsive Webpage</h1>
+</header>
+<div class="container">
+<div class="box box1">HTML</div>
+<div class="box box2">CSS</div>
+<div class="box box3">JavaScript</div>
+</div>
+</body>
+</html>
